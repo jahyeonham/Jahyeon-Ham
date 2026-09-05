@@ -485,23 +485,27 @@ export const CaseStudyView: React.FC<CaseStudyViewProps> = ({
 
         {/* Next / Previous Project Navigation */}
         <div className="pt-10 flex items-center justify-between text-xs font-bold uppercase tracking-widest">
-          <button
-            onClick={() => onSelectProject(prevProject)}
-            className="inline-flex items-center gap-2 text-[#1A1A1A]/50 hover:text-[#1A1A1A] transition-colors group cursor-pointer"
-          >
-            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-            <span className="hidden sm:inline">PREV:</span>
-            <span className="text-[#1A1A1A]">{prevProject.title}</span>
-          </button>
+          {prevProject ? (
+            <button
+              onClick={() => onSelectProject(prevProject)}
+              className="inline-flex items-center gap-2 text-[#1A1A1A]/50 hover:text-[#1A1A1A] transition-colors group cursor-pointer"
+            >
+              <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+              <span className="hidden sm:inline">PREV:</span>
+              <span className="text-[#1A1A1A]">{prevProject.title}</span>
+            </button>
+          ) : <div />}
 
-          <button
-            onClick={() => onSelectProject(nextProject)}
-            className="inline-flex items-center gap-2 text-[#1A1A1A]/50 hover:text-[#1A1A1A] transition-colors group cursor-pointer"
-          >
-            <span className="hidden sm:inline">NEXT:</span>
-            <span className="text-[#1A1A1A]">{nextProject.title}</span>
-            <ArrowLeft className="w-4 h-4 rotate-180 transition-transform group-hover:translate-x-1" />
-          </button>
+          {nextProject ? (
+            <button
+              onClick={() => onSelectProject(nextProject)}
+              className="inline-flex items-center gap-2 text-[#1A1A1A]/50 hover:text-[#1A1A1A] transition-colors group cursor-pointer"
+            >
+              <span className="hidden sm:inline">NEXT:</span>
+              <span className="text-[#1A1A1A]">{nextProject.title}</span>
+              <ArrowLeft className="w-4 h-4 rotate-180 transition-transform group-hover:translate-x-1" />
+            </button>
+          ) : <div />}
         </div>
       </div>
 

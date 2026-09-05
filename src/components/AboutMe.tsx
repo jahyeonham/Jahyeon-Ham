@@ -38,11 +38,11 @@ export const AboutMe: React.FC<AboutMeProps> = ({
         {/* Left / Main Text column (7 cols) */}
         <div className="lg:col-span-7 space-y-6">
           <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[#1A1A1A] leading-snug">
-            {aboutData.greeting}
+            {aboutData?.greeting || 'Hello, I’m Jahyeon. Nice to meet you.'}
           </h3>
 
           <div className="space-y-4 text-sm sm:text-base text-[#555] leading-relaxed font-normal">
-            {aboutData.paragraphs.map((p, idx) => (
+            {(aboutData?.paragraphs || []).map((p, idx) => (
               <p key={idx}>{p}</p>
             ))}
 
@@ -64,7 +64,7 @@ export const AboutMe: React.FC<AboutMeProps> = ({
               <span className="block text-[#1A1A1A]/40 text-[10px] font-bold tracking-widest mb-1">LOCATION</span>
               <span className="font-bold text-[#1A1A1A] inline-flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5 text-[#1A1A1A]" />
-                {aboutData.location}
+                {aboutData?.location || 'Sydney, Australia'}
               </span>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const AboutMe: React.FC<AboutMeProps> = ({
           <div className="relative border border-[#1A1A1A]/10 bg-[#E5E5E3] p-2">
             <div className="overflow-hidden aspect-4/3 relative bg-[#1A1A1A]">
               <img
-                src={aboutData.photoUrl || '/src/assets/images/jahyeon_behind_the_scenes_1788441041611.jpg'}
+                src={aboutData?.photoUrl || '/images/jahyeon_behind_the_scenes_1788441041611.jpg'}
                 alt="Jahyeon Ham behind the scenes on broadcast production set"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center grayscale contrast-110 hover:grayscale-0 transition-all duration-700"

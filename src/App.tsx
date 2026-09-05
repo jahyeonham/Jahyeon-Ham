@@ -146,11 +146,11 @@ export default function App() {
       if (hash) {
         const found = allProjects.find((p) => p.id === hash);
         if (found) {
-          setSelectedProject(found);
+          setSelectedProject((prev) => (prev?.id === found.id ? prev : found));
           return;
         }
       }
-      setSelectedProject(null);
+      setSelectedProject((prev) => (prev ? null : prev));
     };
 
     handleHashChange();
@@ -162,11 +162,11 @@ export default function App() {
   useEffect(() => {
     if (selectedProject) {
       const updated = allProjects.find((p) => p.id === selectedProject.id);
-      if (updated) {
+      if (updated && updated !== selectedProject) {
         setSelectedProject(updated);
       }
     }
-  }, [allProjects, selectedProject]);
+  }, [allProjects]);
 
   const showToast = (msg: string) => {
     setStorageToast(msg);

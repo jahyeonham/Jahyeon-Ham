@@ -11,8 +11,8 @@ export const PRODUCER_WORKS: Project[] = [
     scope: 'Broadcast Production · Social Content · Video Editing',
     metrics: '40K+ views · Digital Content',
     highlightBadge: '40K+ SOCIAL VIEWS',
-    thumbnailUrl: '/src/assets/images/project_country_village_1788441080157.jpg',
-    backdropUrl: '/src/assets/images/project_country_village_1788441080157.jpg',
+    thumbnailUrl: '/images/project_country_village_1788441080157.jpg',
+    backdropUrl: '/images/project_country_village_1788441080157.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     videoDuration: 'Broadcast Episodes & Viral Shorts',
     about:
@@ -32,7 +32,7 @@ export const PRODUCER_WORKS: Project[] = [
       ],
     },
     stills: [
-      '/src/assets/images/project_country_village_1788441080157.jpg',
+      '/images/project_country_village_1788441080157.jpg',
       'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop',
     ],
@@ -48,8 +48,8 @@ export const PRODUCER_WORKS: Project[] = [
     scope: 'Planning · Production · Directing · Editing',
     metrics: '#1 Netflix Korea',
     highlightBadge: '#1 Netflix Korea',
-    thumbnailUrl: '/src/assets/images/project_clean_sweep_1788441059961.jpg',
-    backdropUrl: '/src/assets/images/project_clean_sweep_1788441059961.jpg',
+    thumbnailUrl: '/images/project_clean_sweep_1788441059961.jpg',
+    backdropUrl: '/images/project_clean_sweep_1788441059961.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=jNQXAC9IVRw',
     videoDuration: 'Full Broadcast / Prime Time',
     about:
@@ -69,7 +69,7 @@ export const PRODUCER_WORKS: Project[] = [
       ],
     },
     stills: [
-      '/src/assets/images/project_clean_sweep_1788441059961.jpg',
+      '/images/project_clean_sweep_1788441059961.jpg',
       'https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=1200&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1562077772-3ab1218668f5?q=80&w=1200&auto=format&fit=crop',
     ],
@@ -85,8 +85,8 @@ export const PRODUCER_WORKS: Project[] = [
     scope: 'Planning · Production · Directing · Editing',
     metrics: 'Hit SBS Storytelling Variety',
     highlightBadge: 'Top Rated Mystery',
-    thumbnailUrl: '/src/assets/images/project_mystery_tail_1788441140904.jpg',
-    backdropUrl: '/src/assets/images/project_mystery_tail_1788441140904.jpg',
+    thumbnailUrl: '/images/project_mystery_tail_1788441140904.jpg',
+    backdropUrl: '/images/project_mystery_tail_1788441140904.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=fJ9rUzIMcZQ',
     videoDuration: '60-min Storytelling Mystery Format',
     about:
@@ -106,7 +106,7 @@ export const PRODUCER_WORKS: Project[] = [
       ],
     },
     stills: [
-      '/src/assets/images/project_mystery_tail_1788441140904.jpg',
+      '/images/project_mystery_tail_1788441140904.jpg',
       'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1200&auto=format&fit=crop',
     ],
@@ -122,8 +122,8 @@ export const PRODUCER_WORKS: Project[] = [
     scope: 'Planning · Field Production · Directing · Editing',
     metrics: 'Produced for National Network · 3+ Years',
     highlightBadge: 'Produced for National Network',
-    thumbnailUrl: '/src/assets/images/project_sbs_broadcast_1788441095675.jpg',
-    backdropUrl: '/src/assets/images/project_sbs_broadcast_1788441095675.jpg',
+    thumbnailUrl: '/images/project_sbs_broadcast_1788441095675.jpg',
+    backdropUrl: '/images/project_sbs_broadcast_1788441095675.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=9bZkp7q19f0',
     videoDuration: 'Daily Live & Packaged Segments',
     about:
@@ -143,7 +143,7 @@ export const PRODUCER_WORKS: Project[] = [
       ],
     },
     stills: [
-      '/src/assets/images/project_sbs_broadcast_1788441095675.jpg',
+      '/images/project_sbs_broadcast_1788441095675.jpg',
       'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=1200&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop',
     ],
@@ -395,7 +395,7 @@ export const DEFAULT_ABOUT_DATA: AboutData = {
     'Outside of work, I make videos for my YouTube channel, travel whenever I can, and am always looking for something good to eat. I’m also slowly getting used to life on the other side of the camera.',
   ],
   location: 'Sydney, Australia',
-  photoUrl: '/src/assets/images/jahyeon_behind_the_scenes_1788441041611.jpg',
+  photoUrl: '/images/jahyeon_behind_the_scenes_1788441041611.jpg',
 };
 
 export const DEFAULT_CONTACT_LINKS: ContactLinksData = {
